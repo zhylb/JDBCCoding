@@ -1,0 +1,33 @@
+这里是  内容 
+
+--------------------------------------------------------------------
+
+
+--------------------------------------------------------------------
+
+
+--------------------------------------------------------------------
+
+com.lihd.bean.Customer.java											: 两个javabean
+com.lihd.bean.Order.java											: 
+
+--------------------------------------------------------------------
+
+com.lihd.connection.ConnectionUtils.java							: 获取Connection的工具类
+
+--------------------------------------------------------------------
+
+
+--------------------------------------------------------------------
+
+com.lihd.preparedstatement.crud.CustomerForQuery.java				: 专门用于查询 Customer
+com.lihd.preparedstatement.crud.OrderForQuery.java					: 专门用于查询 Order 引入了 getColumnLabel()这个重要方法
+com.lihd.preparedstatement.crud.PreparedStatementUpdateTest.java	: ps类的更新操作 由此得到了JDBCUtils查询方法
+com.lihd.preparedstatement.crud.QueryUtils.java						: 重要 根据上面三个类 得出通用的查询方法第一版
+
+--------------------------------------------------------------------
+
+com.lihd.util.JDBCUtils.java										: 工具类 和 jdbc_1中一样
+
+--------------------------------------------------------------------
+

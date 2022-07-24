@@ -1,0 +1,24 @@
+这里是 获取Connection的 内容
+
+--------------------------------------------------------------------
+
+
+--------------------------------------------------------------------
+
+
+--------------------------------------------------------------------
+
+com.lihd.connection.ConnectionTest.java				: 获取Connection的五种方法，需要掌握最后一种，五种方法是迭代关系
+
+--------------------------------------------------------------------
+
+
+--------------------------------------------------------------------
+
+com.lihd.statement.crud.JDBCUtils.java				: 第一版的工具类
+com.lihd.statement.crud.PreparedStatementTest.java	: PreparedStatement的好处 解决了sql 注入
+com.lihd.statement.crud.StatementTest.java			: statement可能存在sql注入
+com.lihd.statement.crud.User.java						: JavaBean
+
+--------------------------------------------------------------------
+

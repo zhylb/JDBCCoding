@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<c3p0-config>
+
+
+    <!-- This app is massive!  -->
+    <named-config name="helloC3P0">
+
+        <property name="driverClass">com.mysql.jdbc.Driver</property>
+        <property name="jdbcUrl">jdbc:mysql://localhost:13306/test</property>
+        <property name="user">root</property>
+        <property name="password">abc123</property>
+
+        <!-- 连接数不够的时候，一次申请的连接数 -->
+        <property name="acquireIncrement">5</property>
+        <!-- 初始的连接数 -->
+        <property name="initialPoolSize">100</property>
+        <!-- 最少的连接数-->
+        <property name="minPoolSize">10</property>
+        <!-- 最大的连接数-->
+        <property name="maxPoolSize">50</property>
+
+        <!-- intergalactoApp adopts a different approach to configuring statement caching -->
+        <!-- 最大的Statement数 就是ps,statement那个-->
+        <property name="maxStatements">0</property>
+        <!-- 每个连接的最大的Statement数 -->
+        <property name="maxStatementsPerConnection">5</property>
+
+
+
+    </named-config>
+</c3p0-config>
